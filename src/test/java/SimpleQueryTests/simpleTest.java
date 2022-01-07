@@ -44,8 +44,8 @@ public class simpleTest {
         System.out.println(RelOptUtil.toString(logicPlan));
         System.out.println(RelOptUtil.toString(logicPlan2));
         Context z3Context = new Context();
-        AlgeRule.normalize(AlgeNodeParserPair.constructAlgeNode(logicPlan, z3Context));
-        AlgeRule.normalize(AlgeNodeParserPair.constructAlgeNode(logicPlan2, z3Context));
+        algeExpr = AlgeRule.normalize(AlgeNodeParserPair.constructAlgeNode(logicPlan, z3Context));
+        algeExpr2 = AlgeRule.normalize(AlgeNodeParserPair.constructAlgeNode(logicPlan2, z3Context));
       }catch (Exception e){
         result.addProperty("decision","unknown");
         result.addProperty("reason","sql feature not support");
