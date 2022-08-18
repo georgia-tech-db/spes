@@ -1,5 +1,5 @@
-# sqlEq
-A repo for checking SQL equivalent
+# SQL Query Equivalence
+A tool for checking equivalence of SQL queries.
 
 # z3 update
 needs to build on z3 4.6 version:
